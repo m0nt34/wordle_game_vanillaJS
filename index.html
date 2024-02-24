@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wordle</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <label>
+      <input type="checkbox" class="check-box" />
+      <div class="menu-sign">
+        <span class="top-line line"></span>
+        <span class="middle-line line"></span>
+        <span class="bottom-line line"></span>
+      </div>
+      <div class="slider">
+        <h1>MENU</h1>
+        <ul>
+          <li>
+            <a href="#"><i class="far fa-user"></i> Profile</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-book"></i> Dictionary</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-gear"></i> Dettings</a>
+          </li>
+          <li class="theme-changer">
+            <a href="#"
+              ><i class="bx bx-sun icno"></i> Light Mode
+              <label class="toggle-btn-label">
+                <input type="checkbox" class="check-box1" />
+                <div class="toggle-btn">
+                  <div class="toggle-bl"></div>
+                </div>
+              </label>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </label>
+    <nav class="nav-bar">
+      <header class="game-name">wordle</header>
+    </nav>
+
+    <div class="popupsCont"></div>
+
+    <div class="winPopUp hide">
+      <div class="close-sign-cont">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <h1>you won</h1>
+      <div class="btnContainer">
+        <button><i class="fa-solid fa-rotate-right"></i></button>
+      </div>
+    </div>
+    <div class="play-area">
+      <section>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+      </section>
+      <section>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+      </section>
+      <section>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+      </section>
+      <section>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+      </section>
+      <section>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+      </section>
+      <section>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+        <div class="inp-box"></div>
+      </section>
+    </div>
+    <div class="keyboard">
+      <section>
+        <span class="keyboard-keys">Q</span>
+        <span class="keyboard-keys">W</span>
+        <span class="keyboard-keys">E</span>
+        <span class="keyboard-keys">R</span>
+        <span class="keyboard-keys">T</span>
+        <span class="keyboard-keys">Y</span>
+        <span class="keyboard-keys">U</span>
+        <span class="keyboard-keys">I</span>
+        <span class="keyboard-keys">O</span>
+        <span class="keyboard-keys">P</span>
+      </section>
+      <section>
+        <span class="keyboard-keys">A</span>
+        <span class="keyboard-keys">S</span>
+        <span class="keyboard-keys">D</span>
+        <span class="keyboard-keys">F</span>
+        <span class="keyboard-keys">G</span>
+        <span class="keyboard-keys">H</span>
+        <span class="keyboard-keys">J</span>
+        <span class="keyboard-keys">K</span>
+        <span class="keyboard-keys">L</span>
+      </section>
+      <section>
+        <span class="enterBtn">ENTER</span>
+        <span class="keyboard-keys">Z</span>
+        <span class="keyboard-keys">X</span>
+        <span class="keyboard-keys">C</span>
+        <span class="keyboard-keys">V</span>
+        <span class="keyboard-keys">B</span>
+        <span class="keyboard-keys">N</span>
+        <span class="keyboard-keys">M</span>
+        <span class="deletebtn"><i class="fa-solid fa-delete-left"></i> </span>
+      </section>
+    </div>
+  </body>
+  <script defer src="js.js"></script>
+</html>
